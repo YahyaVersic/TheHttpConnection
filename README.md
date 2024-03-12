@@ -4,8 +4,8 @@ Goal: Server-Client Programs to exchange actual files and not just json-based da
 
 ## Roadmap
 Server:
-1. RestController with Spring Boot to accept GET-Requests
-2. return JSON Object
+1. DONE RestController with Spring Boot to accept GET-Requests
+2. DONE return JSON Object
 3. return an actual FILE
 
 
