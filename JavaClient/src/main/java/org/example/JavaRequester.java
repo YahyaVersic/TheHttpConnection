@@ -8,6 +8,7 @@ public class JavaRequester {
 
     public void request() {
         System.out.println("Requesting...");
+        // Und hier weiter Sachen machen
     }
 
 }
