@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: JavaRestServer
+server:
+  port: 6969
