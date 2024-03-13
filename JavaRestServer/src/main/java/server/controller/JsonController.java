@@ -1,5 +1,7 @@
 package server.controller;
 
+import jakarta.annotation.PostConstruct;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -13,11 +15,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+// Rest Controller aka @ResponseBody at every method
 @RestController
 public class JsonController {
 
     public JsonController() {
 
+    }
+
+
+    @GetMapping("/ping")
+    public String ping() {
+        // Static html
+        return "pong";
     }
 
     @GetMapping("/json")

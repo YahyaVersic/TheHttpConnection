@@ -3,6 +3,7 @@ package server.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -17,10 +18,12 @@ public class SimpleController {
     public SimpleController() {
     }
 
+
     @GetMapping("/hello")
-    public String sayHello(Model m) {
+    @ResponseBody
+    public String sayHello() {
         // Static html
-        return "index";
+            return "hello";
     }
 
 
