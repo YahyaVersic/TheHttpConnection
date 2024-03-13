@@ -7,7 +7,7 @@ Server:
 1. DONE RestController with Spring Boot to accept GET-Requests
 2. DONE return JSON Object
 3. return an actual FILE
-
+4. Post Mapping: Upload Json, Files etc. (later managing bigger files)
 
 Client:
 1. (Java) Client to send HTTP GET Requests to server above
