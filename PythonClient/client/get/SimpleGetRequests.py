@@ -4,19 +4,19 @@ from json import loads
 URL = "http://localhost:6969/"
 
 
-def get_request_hello():
+def get_hello():
     url = URL + "hello"
     response = requests.get(url)
     print(response.text)
 
 
-def get_request_time():
+def get_time():
     url = URL + "time"
     response = requests.get(url)
     print(response.text)
 
 
-def get_request_urls():
+def get_urls():
     url = URL + "urls"
     response = requests.get(url)
     print(response.text)
@@ -29,17 +29,17 @@ def get_request_urls():
         print(i)
 
 
-def get_request_ping():
+def get_ping():
     url = URL + "ping"
     response = requests.get(url)
     print(response.text)
 
 
 def main():
-    # get_request_hello()
-    # get_request_time()
-    # get_request_urls()
-    get_request_ping()
+    # get_hello()
+    # get_time()
+    # get_urls()
+    get_ping()
 
 
 if __name__ == '__main__':
