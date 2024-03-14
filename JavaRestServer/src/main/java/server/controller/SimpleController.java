@@ -15,17 +15,11 @@ import java.util.Locale;
 @Controller
 public class SimpleController {
 
-    public SimpleController() {
-    }
-
-
     @GetMapping("/hello")
-    @ResponseBody
     public String sayHello() {
         // Static html
-            return "hello";
+        return "index";
     }
-
 
     @GetMapping("/time")
     public String tellTime(Model m) {

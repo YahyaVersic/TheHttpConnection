@@ -19,11 +19,6 @@ import java.util.List;
 @RestController
 public class JsonController {
 
-    public JsonController() {
-
-    }
-
-
     @GetMapping("/ping")
     public String ping() {
         // Static html
@@ -47,6 +42,5 @@ public class JsonController {
         InputStream in = getClass().getResourceAsStream("/pdfs/Basic_pancakes_recipe_rosiesworld.pdf");
         return in.readAllBytes();
     }
-
 
 }
