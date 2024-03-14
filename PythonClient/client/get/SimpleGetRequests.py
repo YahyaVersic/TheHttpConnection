@@ -29,10 +29,17 @@ def get_request_urls():
         print(i)
 
 
+def get_request_ping():
+    url = URL + "ping"
+    response = requests.get(url)
+    print(response.text)
+
+
 def main():
     # get_request_hello()
     # get_request_time()
-    get_request_urls()
+    # get_request_urls()
+    get_request_ping()
 
 
 if __name__ == '__main__':
